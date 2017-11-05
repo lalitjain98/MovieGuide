@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.lalit.movieguide.MovieDetailActivity"
+    tools:showIn="@layout/activity_movie_detail">
+
+
+    <LinearLayout
+        android:layout_margin = "16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieDetailOverviewView"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:id="@+id/movieDetailReleaseDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:id="@+id/movieDetailRuntimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Trailers"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movieDetailTrailersListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Cast"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movieDetailCastListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Similar Movies"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movieDetailSimilarMoviesListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Reviews"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movieDetailReviewsListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
