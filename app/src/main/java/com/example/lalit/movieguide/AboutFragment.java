@@ -52,7 +52,7 @@ public class AboutFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.gitubLinkButton :
                 Intent gitHubLink = new Intent();
-                gitHubLink.setData(Uri.parse("https://github.com/lalitjain98/MovieGuideApp"));
+                gitHubLink.setData(Uri.parse("https://github.com/lalitjain98/MovieGuide"));
                 startActivity(gitHubLink);
                 break;
 
